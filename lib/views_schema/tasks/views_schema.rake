@@ -44,9 +44,9 @@ Rake::Task['db:schema:dump'].enhance do
 end
 
 Rake::Task['db:schema:load'].enhance do
-  Rake::Task['db:views:schema:load'].invoke
+  #Rake::Task['db:views:schema:load'].invoke
 end
 
 Rake::Task['db:test:prepare'].enhance do
-  Rake::Task['db:views:schema:load'].invoke
+  #Rake::Task['db:views:schema:load'].invoke
 end
