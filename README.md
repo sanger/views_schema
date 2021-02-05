@@ -1,7 +1,12 @@
 # views_schema
 A set of tasks to build/maintain views
 
-# Install
+
+## Requirements
+
+* Rails: This gem installs Rake tasks and class definitions to be used in a Rails application.
+
+## Setup
 
 Add this gem to the project
 
@@ -9,9 +14,9 @@ Add this gem to the project
   gem 'views_schema', github: 'sanger/views_schema', branch: 'main'
 ```
 
-# Usage
+## Usage
 
-## Create views
+### Creating new views
 
 1. Generate a migration for the project
 
@@ -44,7 +49,7 @@ end
   bundle exec rake db:migrate
 ```
 
-## Dump the schema of views
+### Dump the schema of views
 
 1. Run the rake task
 ```
@@ -54,7 +59,7 @@ end
 This will generate a file ```db/views_schema.rb```.
 
 
-## Load the schema of views
+### Load the schema of views
 
 1. Run the rake task
 ```
