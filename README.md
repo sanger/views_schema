@@ -11,7 +11,7 @@ A set of tasks to build/maintain views
 Add this gem to the project
 
 ```
-  gem 'views_schema', github: 'sanger/views_schema', branch: 'main'
+  gem 'views_schema', github: 'sanger/views_schema'
 ```
 
 ## Usage
