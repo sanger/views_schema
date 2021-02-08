@@ -4,7 +4,6 @@
 # output will mostly go unseen.
 # rubocop:disable Rails/Output
 
-require 'rainbow'
 
 # Provides the ability to create and manage views through ActiveRecord
 # @see https://dev.mysql.com/doc/refman/5.7/en/create-view.html
