@@ -45,7 +45,7 @@ module ViewsSchema
       yield(name, matched[:statement], matched[:algorithm], matched[:security])
     end
   rescue ActiveRecord::StatementInvalid => e
-    puts Rainbow(WARNING).red.inverse
+    Rails.logger.warn(e)
 
     raise e
   end
