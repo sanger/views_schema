@@ -32,7 +32,7 @@ module ViewsSchema
   # Valid algorithm options, first option is default
   ALGORITHMS = %w[UNDEFINED MERGE TEMPTABLE].freeze
   # Valid security options, first option is default
-  SECURITIES = %w[DEFINER INVOKER].freeze
+  SECURITIES = %w[INVOKER DEFINER].freeze
   VIEW_STATEMENT = '%<action>s ALGORITHM=%<algorithm>s SQL SECURITY %<security>s VIEW `%<name>s` AS %<statement>s'
   # rubocop:disable Layout/LineLength
   REGEXP = /\ACREATE ALGORITHM=(?<algorithm>\w*) DEFINER=`[^`]*`@`[^`]*` SQL SECURITY (?<security>\w*) VIEW `[^`]+` AS (?<statement>.*)\z/i.freeze
